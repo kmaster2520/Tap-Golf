@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EC5A2ED1C70D8BF0098E155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A2EC1C70D8BF0098E155 /* AppDelegate.swift */; };
+		1EC5A2EF1C70D8BF0098E155 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5A2EE1C70D8BF0098E155 /* GameScene.sks */; };
+		1EC5A2F11C70D8BF0098E155 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A2F01C70D8BF0098E155 /* GameScene.swift */; };
+		1EC5A2F31C70D8BF0098E155 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A2F21C70D8BF0098E155 /* GameViewController.swift */; };
+		1EC5A2F61C70D8BF0098E155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5A2F41C70D8BF0098E155 /* Main.storyboard */; };
+		1EC5A2F81C70D8BF0098E155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5A2F71C70D8BF0098E155 /* Assets.xcassets */; };
+		1EC5A2FB1C70D8BF0098E155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5A2F91C70D8BF0098E155 /* LaunchScreen.storyboard */; };
+		1EC5A3061C70D8BF0098E155 /* Tap_GolfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A3051C70D8BF0098E155 /* Tap_GolfTests.swift */; };
+		1EC5A3111C70D8BF0098E155 /* Tap_GolfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A3101C70D8BF0098E155 /* Tap_GolfUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EC5A3021C70D8BF0098E155 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC5A2E11C70D8BF0098E155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EC5A2E81C70D8BF0098E155;
+			remoteInfo = "Tap-Golf";
+		};
+		1EC5A30D1C70D8BF0098E155 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC5A2E11C70D8BF0098E155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EC5A2E81C70D8BF0098E155;
+			remoteInfo = "Tap-Golf";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EC5A2E91C70D8BF0098E155 /* Tap-Golf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap-Golf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC5A2EC1C70D8BF0098E155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EC5A2EE1C70D8BF0098E155 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		1EC5A2F01C70D8BF0098E155 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		1EC5A2F21C70D8BF0098E155 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1EC5A2F51C70D8BF0098E155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EC5A2F71C70D8BF0098E155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EC5A2FA1C70D8BF0098E155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EC5A2FC1C70D8BF0098E155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC5A3011C70D8BF0098E155 /* Tap-GolfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap-GolfTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC5A3051C70D8BF0098E155 /* Tap_GolfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_GolfTests.swift; sourceTree = "<group>"; };
+		1EC5A3071C70D8BF0098E155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC5A30C1C70D8BF0098E155 /* Tap-GolfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap-GolfUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC5A3101C70D8BF0098E155 /* Tap_GolfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_GolfUITests.swift; sourceTree = "<group>"; };
+		1EC5A3121C70D8BF0098E155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EC5A2E61C70D8BF0098E155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC5A2FE1C70D8BF0098E155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC5A3091C70D8BF0098E155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EC5A2E01C70D8BF0098E155 = {
+			isa = PBXGroup;
+			children = (
+				1EC5A2EB1C70D8BF0098E155 /* Tap-Golf */,
+				1EC5A3041C70D8BF0098E155 /* Tap-GolfTests */,
+				1EC5A30F1C70D8BF0098E155 /* Tap-GolfUITests */,
+				1EC5A2EA1C70D8BF0098E155 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EC5A2EA1C70D8BF0098E155 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EC5A2E91C70D8BF0098E155 /* Tap-Golf.app */,
+				1EC5A3011C70D8BF0098E155 /* Tap-GolfTests.xctest */,
+				1EC5A30C1C70D8BF0098E155 /* Tap-GolfUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EC5A2EB1C70D8BF0098E155 /* Tap-Golf */ = {
+			isa = PBXGroup;
+			children = (
+				1EC5A2EC1C70D8BF0098E155 /* AppDelegate.swift */,
+				1EC5A2EE1C70D8BF0098E155 /* GameScene.sks */,
+				1EC5A2F01C70D8BF0098E155 /* GameScene.swift */,
+				1EC5A2F21C70D8BF0098E155 /* GameViewController.swift */,
+				1EC5A2F41C70D8BF0098E155 /* Main.storyboard */,
+				1EC5A2F71C70D8BF0098E155 /* Assets.xcassets */,
+				1EC5A2F91C70D8BF0098E155 /* LaunchScreen.storyboard */,
+				1EC5A2FC1C70D8BF0098E155 /* Info.plist */,
+			);
+			path = "Tap-Golf";
+			sourceTree = "<group>";
+		};
+		1EC5A3041C70D8BF0098E155 /* Tap-GolfTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EC5A3051C70D8BF0098E155 /* Tap_GolfTests.swift */,
+				1EC5A3071C70D8BF0098E155 /* Info.plist */,
+			);
+			path = "Tap-GolfTests";
+			sourceTree = "<group>";
+		};
+		1EC5A30F1C70D8BF0098E155 /* Tap-GolfUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EC5A3101C70D8BF0098E155 /* Tap_GolfUITests.swift */,
+				1EC5A3121C70D8BF0098E155 /* Info.plist */,
+			);
+			path = "Tap-GolfUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EC5A2E81C70D8BF0098E155 /* Tap-Golf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC5A3151C70D8BF0098E155 /* Build configuration list for PBXNativeTarget "Tap-Golf" */;
+			buildPhases = (
+				1EC5A2E51C70D8BF0098E155 /* Sources */,
+				1EC5A2E61C70D8BF0098E155 /* Frameworks */,
+				1EC5A2E71C70D8BF0098E155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tap-Golf";
+			productName = "Tap-Golf";
+			productReference = 1EC5A2E91C70D8BF0098E155 /* Tap-Golf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EC5A3001C70D8BF0098E155 /* Tap-GolfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC5A3181C70D8BF0098E155 /* Build configuration list for PBXNativeTarget "Tap-GolfTests" */;
+			buildPhases = (
+				1EC5A2FD1C70D8BF0098E155 /* Sources */,
+				1EC5A2FE1C70D8BF0098E155 /* Frameworks */,
+				1EC5A2FF1C70D8BF0098E155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EC5A3031C70D8BF0098E155 /* PBXTargetDependency */,
+			);
+			name = "Tap-GolfTests";
+			productName = "Tap-GolfTests";
+			productReference = 1EC5A3011C70D8BF0098E155 /* Tap-GolfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EC5A30B1C70D8BF0098E155 /* Tap-GolfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC5A31B1C70D8BF0098E155 /* Build configuration list for PBXNativeTarget "Tap-GolfUITests" */;
+			buildPhases = (
+				1EC5A3081C70D8BF0098E155 /* Sources */,
+				1EC5A3091C70D8BF0098E155 /* Frameworks */,
+				1EC5A30A1C70D8BF0098E155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EC5A30E1C70D8BF0098E155 /* PBXTargetDependency */,
+			);
+			name = "Tap-GolfUITests";
+			productName = "Tap-GolfUITests";
+			productReference = 1EC5A30C1C70D8BF0098E155 /* Tap-GolfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EC5A2E11C70D8BF0098E155 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Sathvik Kadaveru";
+				TargetAttributes = {
+					1EC5A2E81C70D8BF0098E155 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Y3DCP9BRHX;
+					};
+					1EC5A3001C70D8BF0098E155 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Y3DCP9BRHX;
+						TestTargetID = 1EC5A2E81C70D8BF0098E155;
+					};
+					1EC5A30B1C70D8BF0098E155 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Y3DCP9BRHX;
+						TestTargetID = 1EC5A2E81C70D8BF0098E155;
+					};
+				};
+			};
+			buildConfigurationList = 1EC5A2E41C70D8BF0098E155 /* Build configuration list for PBXProject "Tap-Golf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EC5A2E01C70D8BF0098E155;
+			productRefGroup = 1EC5A2EA1C70D8BF0098E155 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EC5A2E81C70D8BF0098E155 /* Tap-Golf */,
+				1EC5A3001C70D8BF0098E155 /* Tap-GolfTests */,
+				1EC5A30B1C70D8BF0098E155 /* Tap-GolfUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EC5A2E71C70D8BF0098E155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC5A2EF1C70D8BF0098E155 /* GameScene.sks in Resources */,
+				1EC5A2FB1C70D8BF0098E155 /* LaunchScreen.storyboard in Resources */,
+				1EC5A2F81C70D8BF0098E155 /* Assets.xcassets in Resources */,
+				1EC5A2F61C70D8BF0098E155 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC5A2FF1C70D8BF0098E155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC5A30A1C70D8BF0098E155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EC5A2E51C70D8BF0098E155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC5A2F11C70D8BF0098E155 /* GameScene.swift in Sources */,
+				1EC5A2F31C70D8BF0098E155 /* GameViewController.swift in Sources */,
+				1EC5A2ED1C70D8BF0098E155 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC5A2FD1C70D8BF0098E155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC5A3061C70D8BF0098E155 /* Tap_GolfTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC5A3081C70D8BF0098E155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC5A3111C70D8BF0098E155 /* Tap_GolfUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EC5A3031C70D8BF0098E155 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EC5A2E81C70D8BF0098E155 /* Tap-Golf */;
+			targetProxy = 1EC5A3021C70D8BF0098E155 /* PBXContainerItemProxy */;
+		};
+		1EC5A30E1C70D8BF0098E155 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EC5A2E81C70D8BF0098E155 /* Tap-Golf */;
+			targetProxy = 1EC5A30D1C70D8BF0098E155 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EC5A2F41C70D8BF0098E155 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EC5A2F51C70D8BF0098E155 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1EC5A2F91C70D8BF0098E155 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EC5A2FA1C70D8BF0098E155 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EC5A3131C70D8BF0098E155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EC5A3141C70D8BF0098E155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EC5A3161C70D8BF0098E155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tap-Golf/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sathvik.Tap-Golf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EC5A3171C70D8BF0098E155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tap-Golf/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sathvik.Tap-Golf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1EC5A3191C70D8BF0098E155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Tap-GolfTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sathvik.Tap-GolfTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap-Golf.app/Tap-Golf";
+			};
+			name = Debug;
+		};
+		1EC5A31A1C70D8BF0098E155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Tap-GolfTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sathvik.Tap-GolfTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap-Golf.app/Tap-Golf";
+			};
+			name = Release;
+		};
+		1EC5A31C1C70D8BF0098E155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Tap-GolfUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sathvik.Tap-GolfUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Tap-Golf";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1EC5A31D1C70D8BF0098E155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tap-GolfUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sathvik.Tap-GolfUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Tap-Golf";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EC5A2E41C70D8BF0098E155 /* Build configuration list for PBXProject "Tap-Golf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC5A3131C70D8BF0098E155 /* Debug */,
+				1EC5A3141C70D8BF0098E155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EC5A3151C70D8BF0098E155 /* Build configuration list for PBXNativeTarget "Tap-Golf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC5A3161C70D8BF0098E155 /* Debug */,
+				1EC5A3171C70D8BF0098E155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EC5A3181C70D8BF0098E155 /* Build configuration list for PBXNativeTarget "Tap-GolfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC5A3191C70D8BF0098E155 /* Debug */,
+				1EC5A31A1C70D8BF0098E155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EC5A31B1C70D8BF0098E155 /* Build configuration list for PBXNativeTarget "Tap-GolfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC5A31C1C70D8BF0098E155 /* Debug */,
+				1EC5A31D1C70D8BF0098E155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EC5A2E11C70D8BF0098E155 /* Project object */;
+}
