@@ -8,7 +8,7 @@
 import SpriteKit
 import UIKit
 
-class GameScene: SKScene, SKPhysicsContactDelegate { //KurtNiemi@air-watch.com
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let ballCategory: UInt32 = 0b1 << 0
     let bunkerCategory: UInt32 = 0b1 << 1

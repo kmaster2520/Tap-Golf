@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E3D81F01C79639700A150B3 /* LevelSelectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D81EF1C79639700A150B3 /* LevelSelectScene.swift */; };
 		1EC5A2ED1C70D8BF0098E155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A2EC1C70D8BF0098E155 /* AppDelegate.swift */; };
 		1EC5A2EF1C70D8BF0098E155 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5A2EE1C70D8BF0098E155 /* GameScene.sks */; };
 		1EC5A2F11C70D8BF0098E155 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A2F01C70D8BF0098E155 /* GameScene.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E3D81EF1C79639700A150B3 /* LevelSelectScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectScene.swift; sourceTree = "<group>"; };
 		1EC5A2E91C70D8BF0098E155 /* Tap-Golf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap-Golf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC5A2EC1C70D8BF0098E155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC5A2EE1C70D8BF0098E155 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -102,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				1EC5A2EC1C70D8BF0098E155 /* AppDelegate.swift */,
-				1EC5A2EE1C70D8BF0098E155 /* GameScene.sks */,
+				1E3D81EF1C79639700A150B3 /* LevelSelectScene.swift */,
 				1EC5A2F01C70D8BF0098E155 /* GameScene.swift */,
+				1EC5A2EE1C70D8BF0098E155 /* GameScene.sks */,
 				1EC5A2F21C70D8BF0098E155 /* GameViewController.swift */,
 				1EC5A2F41C70D8BF0098E155 /* Main.storyboard */,
 				1EC5A2F71C70D8BF0098E155 /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				1EC5A2F11C70D8BF0098E155 /* GameScene.swift in Sources */,
 				1EC5A2F31C70D8BF0098E155 /* GameViewController.swift in Sources */,
 				1EC5A2ED1C70D8BF0098E155 /* AppDelegate.swift in Sources */,
+				1E3D81F01C79639700A150B3 /* LevelSelectScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +499,7 @@
 				1EC5A3171C70D8BF0098E155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EC5A3181C70D8BF0098E155 /* Build configuration list for PBXNativeTarget "Tap-GolfTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				1EC5A31A1C70D8BF0098E155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EC5A31B1C70D8BF0098E155 /* Build configuration list for PBXNativeTarget "Tap-GolfUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				1EC5A31D1C70D8BF0098E155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
