@@ -27,9 +27,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate { //KurtNiemi@air-watch.com
         /* Setup your scene here */
         self.physicsWorld.contactDelegate = self
         
-        addBunker("bunker1", size: [size.width / 5, size.height], pos: [size.width / 2, size.height / 2])
-        addPlayer("ball", size: [32, 32], pos: [size.width / 4, size.height / 2])
-        addGoal("goal", size: [32, 32], pos:[size.width / 4 * 3, size.height / 2])
+        let level = 1;
+        
+        if level == 0 {
+            addBunker("bunker1", size: [size.width / 5, size.height], pos: [size.width / 2, size.height / 2])
+            addPlayer("ball", size: [32, 32], pos: [size.width / 4, size.height / 2])
+            addGoal("goal", size: [32, 32], pos:[size.width / 4 * 3, size.height / 2])
+        } else if level == 1 {
+            addSolid("barrier", size: [size.width / 4 * 3, size.height / 6], pos: [size.width / 8 * 3, size.height / 2], color: UIColor.blueColor())
+            addBunker("bunker1", size: [size.width / 4, size.height], pos: [size.width / 8 * 7, size.height / 2]);
+            addPlayer("ball", size: [32, 32], pos: [size.width / 8, size.height / 4])
+            addGoal("goal", size: [32, 32], pos:[size.width / 8, size.height / 4 * 3])
+        }
+        else {
+            addPlayer("ball", size: [32, 32], pos: [size.width / 2, size.height / 2])
+            addGoal("goal", size: [32, 32], pos:[size.width / 4 * 3, size.height / 2])
+        }
         
         addSolid("topEdge", size: [size.width, size.height / 20], pos: [size.width / 2, 39 * size.height / 40], color: edgeColor)
         addSolid("botEdge", size: [size.width, size.height / 20], pos: [size.width / 2, size.height / 40], color: edgeColor)
@@ -58,15 +71,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate { //KurtNiemi@air-watch.com
     }
     
     func addBunker(name: String, size: [CGFloat], pos:[CGFloat]) {
-        addSprite(name, color: UIColor.yellowColor(), size: size, frla: [0, 0.5, 0, 0], adpa: [false, true, true, false], pos: pos, bits: [bunkerCategory, 0, 0])
+        addSprite(name, color: bunkerColor, size: size, frla: [0, 0.5, 0, 0], adpa: [false, true, true, false], pos: pos, bits: [bunkerCategory, 0, 0])
     }
     
     func addPlayer(name: String, size: [CGFloat], pos:[CGFloat]) {
-        addSprite(name, color: UIColor.redColor(), size: size, frla: [0, 0.6, 0.3, 0], adpa: [false, true, false, false], pos: pos, bits: [ballCategory, edgeCategory, bunkerCategory | roughCategory | goalCategory])
+        addSprite(name, color: playerColor, size: size, frla: [0, 0.6, 0.3, 0], adpa: [false, true, false, false], pos: pos, bits: [ballCategory, edgeCategory, bunkerCategory | roughCategory | goalCategory])
     }
     
     func addGoal(name: String, size: [CGFloat], pos:[CGFloat]) {
-        addSprite(name, color: UIColor.whiteColor(), size: size, frla: [0, 0.5, 0, 0], adpa: [false, true, true, false], pos: pos, bits: [goalCategory, 0, 0])
+        addSprite(name, color: goalColor, size: size, frla: [0, 0.5, 0, 0], adpa: [false, true, true, false], pos: pos, bits: [goalCategory, 0, 0])
     }
     
     func addSolid(name: String, size: [CGFloat], pos:[CGFloat], color: UIColor) {
