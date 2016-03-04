@@ -16,25 +16,24 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let edgeCategory: UInt32 = 0b1 << 3
     let goalCategory: UInt32 = 0b1 << 4
     
-    let edgeColor: UIColor = UIColor(red: 0.3, green: 0, blue: 0.8, alpha: 1)
+    let edgeColor: UIColor = UIColor(red: 0, green: 0.7, blue: 0, alpha: 1)
     let bunkerColor: UIColor = UIColor.yellowColor()
     let playerColor: UIColor = UIColor.redColor()
     let goalColor: UIColor = UIColor.whiteColor()
     
     var flamingo: Bool = false //flamingo is true if the game is paused
+    static var level = 1
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         self.physicsWorld.contactDelegate = self
         
-        let level = 1;
-        
-        if level == 0 {
+        if GameScene.level == 0 {
             addBunker("bunker1", size: [size.width / 5, size.height], pos: [size.width / 2, size.height / 2])
             addPlayer("ball", size: [32, 32], pos: [size.width / 4, size.height / 2])
             addGoal("goal", size: [32, 32], pos:[size.width / 4 * 3, size.height / 2])
-        } else if level == 1 {
-            addSolid("barrier", size: [size.width / 4 * 3, size.height / 6], pos: [size.width / 8 * 3, size.height / 2], color: UIColor.blueColor())
+        } else if GameScene.level == 1 {
+            addSolid("barrier", size: [size.width / 4 * 3, size.height / 6], pos: [size.width / 8 * 3, size.height / 2], color: edgeColor)
             addBunker("bunker1", size: [size.width / 4, size.height], pos: [size.width / 8 * 7, size.height / 2]);
             addPlayer("ball", size: [32, 32], pos: [size.width / 8, size.height / 4])
             addGoal("goal", size: [32, 32], pos:[size.width / 8, size.height / 4 * 3])
@@ -132,6 +131,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if first.categoryBitMask == ballCategory && second.categoryBitMask == bunkerCategory {
             let ball = self.childNodeWithName("ball") as! SKSpriteNode
             ball.physicsBody!.linearDamping = 0.99999
+        }
+        
+        if first.categoryBitMask == ballCategory && second.categoryBitMask == goalCategory {
+            GameScene.level += 1
+            let newScene: SKScene!
+            if (GameScene.level >= LevelSelectScene.numLevels) {
+                newScene = LevelSelectScene(fileNamed:"LevelSelectScene")
+            } else {
+                newScene = GameScene(fileNamed:"GameScene")
+            }
+            newScene!.size.width = 2 * UIScreen.mainScreen().bounds.width
+            newScene!.size.height = 2 * UIScreen.mainScreen().bounds.height
+            newScene!.scaleMode = .AspectFill
+            self.view?.presentScene(newScene, transition: SKTransition.doorsOpenHorizontalWithDuration(0.2))
         }
         
         //print("begin contact")

@@ -17,6 +17,7 @@
 		1EC5A2FB1C70D8BF0098E155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5A2F91C70D8BF0098E155 /* LaunchScreen.storyboard */; };
 		1EC5A3061C70D8BF0098E155 /* Tap_GolfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A3051C70D8BF0098E155 /* Tap_GolfTests.swift */; };
 		1EC5A3111C70D8BF0098E155 /* Tap_GolfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A3101C70D8BF0098E155 /* Tap_GolfUITests.swift */; };
+		1EE32D1C1C88F1B600B4EB22 /* LevelSelectScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1EE32D1B1C88F1B600B4EB22 /* LevelSelectScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1EC5A30C1C70D8BF0098E155 /* Tap-GolfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap-GolfUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC5A3101C70D8BF0098E155 /* Tap_GolfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_GolfUITests.swift; sourceTree = "<group>"; };
 		1EC5A3121C70D8BF0098E155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EE32D1B1C88F1B600B4EB22 /* LevelSelectScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelectScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				1EC5A2EC1C70D8BF0098E155 /* AppDelegate.swift */,
+				1EC5A2F21C70D8BF0098E155 /* GameViewController.swift */,
 				1E3D81EF1C79639700A150B3 /* LevelSelectScene.swift */,
 				1EC5A2F01C70D8BF0098E155 /* GameScene.swift */,
 				1EC5A2EE1C70D8BF0098E155 /* GameScene.sks */,
-				1EC5A2F21C70D8BF0098E155 /* GameViewController.swift */,
+				1EE32D1B1C88F1B600B4EB22 /* LevelSelectScene.sks */,
 				1EC5A2F41C70D8BF0098E155 /* Main.storyboard */,
 				1EC5A2F71C70D8BF0098E155 /* Assets.xcassets */,
 				1EC5A2F91C70D8BF0098E155 /* LaunchScreen.storyboard */,
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EC5A2EF1C70D8BF0098E155 /* GameScene.sks in Resources */,
+				1EE32D1C1C88F1B600B4EB22 /* LevelSelectScene.sks in Resources */,
 				1EC5A2FB1C70D8BF0098E155 /* LaunchScreen.storyboard in Resources */,
 				1EC5A2F81C70D8BF0098E155 /* Assets.xcassets in Resources */,
 				1EC5A2F61C70D8BF0098E155 /* Main.storyboard in Resources */,
