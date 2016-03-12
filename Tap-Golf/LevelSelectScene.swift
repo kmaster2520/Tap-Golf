@@ -13,7 +13,8 @@ import UIKit
 class LevelSelectScene: SKScene {
     
     let boxCategory: UInt32 = 0b1 << 0
-    static let numLevels = 3
+    static let numLevels = 4
+    let rowSize = 5
     
     override func didMoveToView(view: SKView) {
         GameScene.level = 0
@@ -23,11 +24,17 @@ class LevelSelectScene: SKScene {
     }
     
     func addLevelButton(level: Int) {
-        let boxSize: CGFloat = size.height / 6
-        let col: CGFloat = CGFloat(level % 5)
-        let row: CGFloat = CGFloat(Int(level / 5))
+        let boxWidth: CGFloat = size.width / 8
+        let boxHeight: CGFloat = size.height / 8
+        //
+        let col: CGFloat = CGFloat(level % rowSize)
+        let row: CGFloat = CGFloat(Int(level / rowSize))
         print(String(col) + " " + String(row))
-        let box = SKSpriteNode(color: UIColor.grayColor(), size: CGSizeMake(boxSize, boxSize))
+        //
+        let box = SKSpriteNode(color: UIColor.grayColor(), size: CGSizeMake(boxWidth, boxHeight))
+        let xpos: CGFloat = boxWidth + 3 * boxWidth / 2 * col
+        let ypos: CGFloat = size.height - (boxHeight + 3 * boxHeight / 2 * row)
+        box.position = CGPoint(x: xpos, y: ypos)
         box.name = "Box" + String(level)
         box.physicsBody = SKPhysicsBody(rectangleOfSize: box.frame.size)
         box.physicsBody!.allowsRotation = false
@@ -35,29 +42,28 @@ class LevelSelectScene: SKScene {
         box.physicsBody!.dynamic = false
         box.physicsBody!.pinned = true
         box.physicsBody!.allowsRotation = false
-        let xpos: CGFloat = col / 5 * size.width + boxSize
-        let ypos: CGFloat = size.height - (row / 5 * size.height + boxSize)
-        box.position = CGPoint(x: xpos, y: ypos)
+        //
         box.physicsBody!.categoryBitMask = boxCategory
+        box.physicsBody!.contactTestBitMask = 0
+        box.physicsBody!.collisionBitMask = 0
         print(box.position)
         addChild(box)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        /* Called when a touch begins */
-        /*if !flamingo {
-        return
-        }*/
         
         let touch = touches.first as UITouch!
         let location = touch.locationInNode(self)
+        print("\(location)")
         
         if let body = self.physicsWorld.bodyAtPoint(location) {
             if (body.categoryBitMask == boxCategory) {
                 let name = body.node!.name!
                 print(name)
-                let lc = name[name.startIndex.advancedBy(3)]
+                let st = name.startIndex.advancedBy(3)
+                let lc = name.substringFromIndex(st)
                 GameScene.level = Int(String(lc))!
+                //
                 let newScene = GameScene(fileNamed:"GameScene")
                 newScene!.size.width = 2 * UIScreen.mainScreen().bounds.width
                 newScene!.size.height = 2 * UIScreen.mainScreen().bounds.height
