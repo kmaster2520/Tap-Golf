@@ -37,6 +37,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             addBunker("bunker1", size: [size.width / 4, size.height], pos: [size.width / 8 * 7, size.height / 2]);
             addPlayer("ball", size: [32, 32], pos: [size.width / 8, size.height / 4])
             addGoal("goal", size: [32, 32], pos:[size.width / 8, size.height / 4 * 3])
+        } else if GameScene.level == 2 {
+            addSolid("barrier1", size: [size.width / 8, size.height * 5 / 6], pos: [size.width * 3 / 14, size.height * 5 / 12], color: edgeColor)
+            addBunker("bunker1", size: [size.width / 8, size.height / 6], pos: [size.width * 3 / 14, size.height * 11 / 12])
+            addSolid("barrier2", size: [size.width / 8, size.height * 5 / 6], pos: [size.width * 7 / 14, size.height * 7 / 12], color: edgeColor)
+            addBunker("bunker2", size: [size.width / 8, size.height / 6], pos: [size.width * 7 / 14, size.height * 1 / 12])
+            addSolid("barrier3", size: [size.width / 8, size.height * 5 / 6], pos: [size.width * 11 / 14, size.height * 5 / 12], color: edgeColor)
+            addBunker("bunker3", size: [size.width / 8, size.height / 6], pos: [size.width * 11 / 14, size.height * 11 / 12])
+            addPlayer("ball", size: [32, 32], pos: [size.width / 14, size.height / 12])
+            addGoal("goal", size: [32, 32], pos: [size.width * 13 / 14, size.height / 12])
         }
         else {
             addPlayer("ball", size: [32, 32], pos: [size.width / 2, size.height / 2])
